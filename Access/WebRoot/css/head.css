@@ -1,0 +1,42 @@
+﻿.shuxian { font-size: 18px; color: #eee; }
+.shouyecd { width: auto;
+    height: 34px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;}
+.shouyecd a{ color: #666; }
+.shouyecd a:hover{ color: #128bee; }
+.idx a{ color: #128bee;}
+
+.hotsearch {
+	width:102%;
+	height: 46px;
+    overflow: hidden;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: #1483e0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.hotsearch a { color:#fff; }
+
+.hotkey_fg {margin-left: 10px; margin-right: 10px;}
+
+
+.gjhuxy {
+    width: auto;
+    height: 2.5rem;
+    float: left;
+    border: 1px #3391e4 dotted;
+    padding: 0.1rem 0.5rem 0.2rem 0.5rem;
+    border-radius: 0.5rem;
+    margin-right: 2.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+    line-height: 2.2rem;
+}

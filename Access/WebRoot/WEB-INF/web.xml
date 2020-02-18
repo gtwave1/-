@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Access</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EntollServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.EntollServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompetitorServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.CompetitorServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.UserServlet</servlet-class>
+  </servlet>
+  <filter>
+    <filter-name>UserProFileFilter</filter-name>
+    <filter-class>com.zeroPoint.web.filter.UserProFileFilter</filter-class>
+  </filter>
+  <servlet>
+    <servlet-name>ProjectServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.ProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TeamServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.TeamServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GameServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.GameServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BeginServlet</servlet-name>
+    <servlet-class>com.zeroPoint.web.servlet.BeginServlet</servlet-class>
+  </servlet>
+<servlet>
+<servlet-name>t1</servlet-name>
+<servlet-class>com.zeroPoint.web.servlet.BeginServlet</servlet-class>
+<load-on-startup>1</load-on-startup>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>TeamServlet</servlet-name>
+    <url-pattern>/TeamServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProjectServlet</servlet-name>
+    <url-pattern>/ProjectServlet</url-pattern>
+  </servlet-mapping>
+  <filter-mapping>
+    <filter-name>UserProFileFilter</filter-name>
+    <url-pattern>/user/userProFile</url-pattern>
+  </filter-mapping>
+  <servlet-mapping>
+    <servlet-name>EntollServlet</servlet-name>
+    <url-pattern>/EntollServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompetitorServlet</servlet-name>
+    <url-pattern>/CompetitorServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GameServlet</servlet-name>
+    <url-pattern>/GameServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BeginServlet</servlet-name>
+    <url-pattern>/servlet/BeginServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
